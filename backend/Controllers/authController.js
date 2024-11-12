@@ -1,7 +1,7 @@
 import User from '../models/UserSchema.js'
 import Doctor from '../models/DoctorSchema.js'
 import jwt from 'jsonwebtoken'
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 
 const generateToken = user => {
     return jwt.sign(
